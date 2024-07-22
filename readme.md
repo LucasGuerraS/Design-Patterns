@@ -1,6 +1,6 @@
-# Here I plan to document my studies in design patterns
+# Repository made with the intent to document my studies in design patterns
 
-## The resources used are:
+## The resources used:
 
 - Head First Design Patterns O'Reilly (Book)
 - Design Patterns Erich Gamma (Book)
