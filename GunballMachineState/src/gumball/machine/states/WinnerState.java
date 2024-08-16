@@ -1,10 +1,11 @@
 package gumball.machine.states;
 
-import gumball.machine.implementations.GumballMachine;
+import gumball.machine.server.GumballMachine;
 import gumball.machine.interfaces.State;
 
 public class WinnerState implements State {
-    GumballMachine gumballMachine;
+    private static final long serialVersionUID = 2L;
+    transient GumballMachine gumballMachine;
 
     public WinnerState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

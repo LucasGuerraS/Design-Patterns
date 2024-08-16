@@ -1,1 +1,1 @@
-# State Pattern
+# State Pattern and Proxy Pattern

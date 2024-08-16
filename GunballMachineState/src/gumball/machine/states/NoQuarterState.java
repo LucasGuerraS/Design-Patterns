@@ -1,11 +1,12 @@
 package gumball.machine.states;
 
-import gumball.machine.implementations.GumballMachine;
+import gumball.machine.server.GumballMachine;
 import gumball.machine.interfaces.State;
 
 public class NoQuarterState implements State {
+    private static final long serialVersionUID = 2L;
 
-    GumballMachine gumballMachine;
+    transient GumballMachine gumballMachine;
 
     public NoQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

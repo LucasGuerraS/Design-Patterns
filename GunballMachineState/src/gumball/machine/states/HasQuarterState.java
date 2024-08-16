@@ -1,13 +1,14 @@
 package gumball.machine.states;
 
-import gumball.machine.implementations.GumballMachine;
+import gumball.machine.server.GumballMachine;
 import gumball.machine.interfaces.State;
 
 import java.util.Random;
 
 public class HasQuarterState implements State {
+    private static final long serialVersionUID = 2L;
     Random randomWinner = new Random(System.currentTimeMillis());
-    GumballMachine gumballMachine;
+    transient GumballMachine gumballMachine;
 
     public HasQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

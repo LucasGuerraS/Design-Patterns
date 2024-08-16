@@ -1,6 +1,8 @@
 package gumball.machine.interfaces;
 
-public interface State {
+import java.io.Serializable;
+
+public interface State extends Serializable {
     void insertQuarter();
     void ejectQuarter();
     boolean turnCrank();
