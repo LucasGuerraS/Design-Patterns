@@ -11,7 +11,7 @@ public class QuackCounter implements Quackable {
 
     public QuackCounter(Quackable duck) {
         this.duck = duck;
-        observable = new Observable(this);
+        observable = new Observable(duck);
     }
 
     public void quack() {
